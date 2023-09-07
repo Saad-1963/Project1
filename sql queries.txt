@@ -1,0 +1,24 @@
+
+CREATE TABLE customer (
+    email VARCHAR(255) PRIMARY KEY,
+    customer_name VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE booking (
+    booking_number INT AUTO_INCREMENT PRIMARY KEY,
+    reference_number VARCHAR(255),
+    customer_email VARCHAR(255),
+    passenger_name VARCHAR(255) NOT NULL,
+    passenger_phone VARCHAR(20) NOT NULL,
+    pickup_unit_number VARCHAR(10),
+    pickup_street_number VARCHAR(10) NOT NULL,
+    pickup_street_name VARCHAR(255) NOT NULL,
+    pickup_suburb VARCHAR(255) NOT NULL,
+    destination_suburb VARCHAR(255) NOT NULL,
+    pickup_datetime DATETIME NOT NULL,
+    booking_datetime DATETIME DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(20) DEFAULT 'unassigned',
+    FOREIGN KEY (customer_email) REFERENCES customer(email)
+);
