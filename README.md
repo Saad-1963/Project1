@@ -45,16 +45,16 @@ Register a new customer account by providing your name, email address, password,
 #### Login
 Log in using your email address and password to access the booking functionality
 
-![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/login%20page.JPG)
+![App Screenshot](https://github.com/Saad-1963/Project1/blob/main/login%20page.JPG)
 
 #### Cab Booking
 After logging in, you can make a taxi booking by providing details such as passenger name, contact phone, pick-up address, destination suburb, and pick-up date/time.
 The system will generate a unique booking reference number and display a confirmation message.
 
-![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/booking%20page.JPG)
+![App Screenshot](https://github.com/Saad-1963/Project1/blob/main/booking%20page.JPG)
 
 #### Admin Page
 Access the admin page (admin.php) to view unassigned booking requests.
 You can also assign taxis to specific booking requests by entering the booking reference number.
 
-![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/admin%20page.JPG)
+![App Screenshot](https://github.com/Saad-1963/Project1/blob/main/admin%20page.JPG)
