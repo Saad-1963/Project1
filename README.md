@@ -40,7 +40,7 @@ CREATE TABLE booking (
 #### User Registration
 Register a new customer account by providing your name, email address, password, and contact phone number.
 
-![App Screenshot](register page.JPG)
+![App Screenshot](https://github.com/Saad-1963/Project1/blob/main/register%20page.JPG)
 
 #### Login
 Log in using your email address and password to access the booking functionality
