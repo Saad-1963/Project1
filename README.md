@@ -2,8 +2,6 @@
 # CabsOnline
 
 CabsOnline is a web-based taxi booking system that allows passengers to book taxi services online. This README file provides an overview of the project, installation instructions, and usage guidelines.
-
-
 ## overview
 CabsOnline is a project developed as part of the COS80021 Web Application Development course at Swinburne University of Technology. It consists of four main components: registration, login, booking, and admin functionalities. While this project is a simplified version, it demonstrates the core features of an online taxi booking system.
 
@@ -11,7 +9,7 @@ CabsOnline is a project developed as part of the COS80021 Web Application Develo
 
 Queries to create tables in database
 
-```bash
+bash
   
 CREATE TABLE customer (
     email VARCHAR(255) PRIMARY KEY,
@@ -36,20 +34,27 @@ CREATE TABLE booking (
     status VARCHAR(20) DEFAULT 'unassigned',
     FOREIGN KEY (customer_email) REFERENCES customer(email)
 );
-```
-    
+
+
 ## Demo
+#### User Registration
+Register a new customer account by providing your name, email address, password, and contact phone number.
 
+![App Screenshot](register page.JPG)
 
+#### Login
+Log in using your email address and password to access the booking functionality
 
+![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/login%20page.JPG)
 
-## FAQ
+#### Cab Booking
+After logging in, you can make a taxi booking by providing details such as passenger name, contact phone, pick-up address, destination suburb, and pick-up date/time.
+The system will generate a unique booking reference number and display a confirmation message.
 
-#### Question 1
+![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/booking%20page.JPG)
 
-Answer 1
+#### Admin Page
+Access the admin page (admin.php) to view unassigned booking requests.
+You can also assign taxis to specific booking requests by entering the booking reference number.
 
-#### Question 2
-
-Answer 2
-
+![App Screenshot](https://github.com/hashir-ashraf/cabsonline/blob/2d94535e1953c64c7a7cbe3b58cbcac5457da896/admin%20page.JPG)
